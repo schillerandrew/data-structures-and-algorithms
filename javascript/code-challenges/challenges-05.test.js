@@ -23,7 +23,7 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  return arr.reduce((a, b) => a + b, 0);
+  return arr.reduce( (a, b) => a + b, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -39,10 +39,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  let output = arr.reduce((a, b) => {
-    return ({ item: 'temp', purchasePrice: a.purchasePrice + b.purchasePrice });
-  }, { item: '', purchasePrice: 0 })
-  return (output.purchasePrice);
+  return arr.reduce( (a, b) => a + b.purchasePrice, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,7 +51,7 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  return arr.reduce( (a,b) => a + 1, 0);
+  return arr.reduce( (a, b) => a + 1, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -115,7 +112,10 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  return arr.reduce( (a, b) => {
+    a.push(b.name);
+    return a;
+  }, [])
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  return str.split('').reduce ( (a, b) => b + a);
 };
 
 /* ------------------------------------------------------------------------------------------------
