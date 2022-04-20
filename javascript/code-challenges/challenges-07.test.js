@@ -40,6 +40,7 @@ const removeThree = (idx, arr) => {
   arr.splice(idx, 3);
   return arr;
 };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -82,7 +83,6 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => arr.split('');
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -124,10 +124,15 @@ const gruffaloCrumble = {
 };
 
 
-// const listFoods = (recipe) => {
-//   let result = [];
-//   return result;
-// };
+const listFoods = (recipe) => {
+  let result = [];
+  recipe.ingredients.forEach( ingredient => {
+    let withoutAmount = ingredient.slice(ingredient.indexOf(' ') +1 );
+    let withoutUnit = withoutAmount.slice(withoutAmount.indexOf(' ') + 1);
+    result.push(withoutUnit);
+  });
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
