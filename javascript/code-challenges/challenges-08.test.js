@@ -53,8 +53,12 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // Solution code here...
-};
+  charArray.sort((a, b) => {
+    return a.children.length - b.children.length || a.house.localeCompare(b.house);
+  });
+  console.log(charArray);
+  return charArray;
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
