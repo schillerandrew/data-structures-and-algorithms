@@ -88,7 +88,6 @@ const divisibleByFiveTwoToThePower = (input) => {
       return typeof (b) === 'number' && b % 5 === 0;
     });
   });
-  console.log(filteredArray);
   let finalArray = filteredArray.map(x => x.map(y => 2**y));
   return finalArray;
 };
@@ -175,6 +174,7 @@ let findShortest = (data) => {
   let shortestHeight = data.reduce((a, b) => {
     return a.height > b.height ? a : b;
   });
+  console.log(data);
   return data.find({ height } === shortestHeight).name;
 };
 
