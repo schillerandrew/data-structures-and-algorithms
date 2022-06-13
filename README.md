@@ -24,4 +24,4 @@ To run your tests
 
 > #### Table of Contents
 
-- [Challenge 1 - array-reverse](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/data-structures-and-algorithms/401/array-reverse/README)
+- [Challenge 1 - array-reverse](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-reverse/README.md)
