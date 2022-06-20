@@ -27,5 +27,5 @@ To run your tests
 - [Challenge 1 - array-reverse](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-reverse/README.md)
 - [Challenge 2 - array-insert-shift](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-insert-shift/README.md)
 - [Challenge 3 - array-binary-search](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-binary-search/README.md)
-- [Challenge 5 - array-binary-search](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/linked-list/README.md)
-- [Challenge 6 - array-binary-search](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/linked-list-insertions/README.md)
+- [Challenge 5 - linked-list](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/linked-list/README.md)
+- [Challenge 6 - linked-list-insertions](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/linked-list-insertions/README.md)
