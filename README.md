@@ -27,3 +27,4 @@ To run your tests
 - [Challenge 1 - array-reverse](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-reverse/README.md)
 - [Challenge 2 - array-insert-shift](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-insert-shift/README.md)
 - [Challenge 3 - array-binary-search](https://github.com/schillerandrew/data-structures-and-algorithms/blob/main/401/array-binary-search/README.md)
+- [Challenge 8 - linked-list-zip](https://github.com/schillerandrew/data-structures-and-algorithms/blob/linked-list-zip/401/linked-list-zip/README.md)
