@@ -39,14 +39,14 @@ class Stack {
 
   peek () {
     if (this.isEmpty) {
-      return 'The stack is empty -- nothing to remove!';
+      return 'The stack is empty -- no value to return!';
     } else {
       return this.top.value;
     }
   }
 
   isEmpty () {
-    if (this.top === null) {
+    if (!this.top) {
       return true;
     } else {
       return false;
@@ -60,14 +60,31 @@ class Queue {
     this.back = null;
   }
 
-  // enqueue (value) {
+  enqueue (value) {
+    const node = new Node(value);
+    if (!this.back) {
+      this.front = node;
+      this.back = node;
+      return;
+    } else {
+      this.back.next = node;
+      this.back = node;
+    }
+  }
 
-  // }
-  // dequeue()
+  dequeue () {
+    if (!this.front) {
+      return 'The queue is empty -- nothing to remove!';
+    } else {
+      let frontValue = this.front.value;
+      this.front = this.front.next;
+      return frontValue;
+    }
+  }
 
   peek () {
     if (this.isEmpty) {
-      return 'The queue is empty -- nothing to remove!'
+      return 'The queue is empty -- no value to return!'
     } else {
       return this.front.value;
     }
