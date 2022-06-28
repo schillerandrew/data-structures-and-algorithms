@@ -1,0 +1,16 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "A new implementation of linked list functionality.",
+  "main": "LinkedList.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.18.0",
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
