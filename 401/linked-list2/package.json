@@ -4,6 +4,7 @@
   "description": "A new implementation of linked list functionality.",
   "main": "LinkedList.js",
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose --coverage"
   },
