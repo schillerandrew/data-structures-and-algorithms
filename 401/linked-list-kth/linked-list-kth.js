@@ -32,3 +32,8 @@ class LinkedList{
     return arrayifiedList[arrayifiedList-k-1];
   }
 }
+
+module.exports = {
+  Node,
+  LinkedList,
+};

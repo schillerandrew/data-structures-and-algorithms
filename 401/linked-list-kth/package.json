@@ -1,0 +1,16 @@
+{
+  "name": "linked-list-kth",
+  "version": "1.0.0",
+  "description": "Extend the linked list class with a method that gives you the value in a linked list which is `k` nodes before the final node.",
+  "main": "linked-list-kth.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
