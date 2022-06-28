@@ -1,6 +1,6 @@
 'use strict';
 
-let { LinkedList } = require('../LinkedList');
+let { LinkedList } = require('../linkedList');
 
 
 describe('Linked list testing', () => {
