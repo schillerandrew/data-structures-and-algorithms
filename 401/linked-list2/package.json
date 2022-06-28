@@ -4,7 +4,7 @@
   "description": "A new implementation of linked list functionality.",
   "main": "LinkedList.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --verbose --coverage"
   },
   "author": "",
   "license": "ISC",
