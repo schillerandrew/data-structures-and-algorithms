@@ -43,7 +43,7 @@ class LinkedList {
       str += `{ ${current.value} } -> `;
       current = current.next;
     }
-    str += "NULL";
+    str += 'NULL';
     return str;
   }
 }
@@ -68,8 +68,8 @@ class LinkedList {
 
 module.exports = {
   Node,
-  LinkedList
-}
+  LinkedList,
+};
 
 /*
 ### Checklist
