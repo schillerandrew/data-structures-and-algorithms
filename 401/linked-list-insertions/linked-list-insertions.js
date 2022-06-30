@@ -34,21 +34,19 @@ class LinkedList {
     }
 
     let current = this.head;
-    let previous = null;
 
-    while (current) {
-      if (current !== findThisValue) {
-        previous = current;
-        current = current.next;
-      } else if (current === findThisValue && current === this.head)  {
-        newNode = this.head;
-        newNode.next = current;
-        return 'New node inserted';
-      } else if (current === findThisValue) {
-        previous.next = newNode;
-        newNode.next = current;
-        return 'New node inserted';
+    if (current.value === findThisValue) {
+      this.head = newNode;
+      newNode.next = current;
+    }
+
+    while (current.next) {
+      if (current.next.value === findThisValue) {
+        newNode.next = current.next;
+        current.next = newNode;
+        return;
       }
+      current = current.next;
     }
     return 'No match found';
   }
@@ -62,15 +60,17 @@ class LinkedList {
     let current = this.head;
 
     while (current) {
-      if (current !== findThisValue) {
-        current = current.next;
-      } else if (current === findThisValue) {
-        // next = current.next;
+      if (current.value === findThisValue) {
         newNode.next = current.next;
         current.next = newNode;
-        return 'New node inserted';
       }
+      current = current.next;
     }
     return 'No match found';
   }
 }
+
+module.exports = {
+  Node,
+  LinkedList,
+};
