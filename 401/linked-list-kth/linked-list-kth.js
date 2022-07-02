@@ -29,7 +29,7 @@ class LinkedList{
     if (k >= arrayifiedList.length) {
       return 'That is not a valid spot in the linked list!'
     }
-    return arrayifiedList[arrayifiedList-k-1];
+    return arrayifiedList[arrayifiedList.length-k-1];
   }
 }
 
