@@ -13,11 +13,11 @@ class LinkedList {
   }
 
   zipLists(list1, list2) {
-    zippedList = '';
+    let zippedList = '';
 
     if (!list1.head) { // no nodes in list1
       if (!list2.head) { // no nodes in either list
-        return 'null';
+        return null;
       } else { // only list2 has nodes
         let current = list2.head;
         while (current) {
@@ -31,7 +31,7 @@ class LinkedList {
 
     if (!list2.head) { // no nodes in list2
       if (!list1.head) { // no nodes in either list
-        return 'null';
+        return null;
       } else { // only list1 has nodes
         let current = list1.head;
         while (current) {
@@ -44,13 +44,13 @@ class LinkedList {
     }
 
     if (list1.head && list2.head) { // nodes in both lists
-      currentOne = list1.head;
-      currentTwo = list2.head;
+      let currentOne = list1.head;
+      let currentTwo = list2.head;
       while (currentOne && currentTwo) { // both lists have nodes to tally
         zippedList = zippedList + currentOne.value + ' -> ';
         currentOne = currentOne.next;
         zippedList = zippedList + currentTwo.value + ' -> ';
-        currentOne = currentTwo.next;
+        currentTwo = currentTwo.next;
       }
       while (currentOne) { // only list1 has nodes to tally
         zippedList = zippedList + currentOne.value + ' -> ';
@@ -65,3 +65,8 @@ class LinkedList {
     }
   }
 }
+
+module.exports = {
+  Node,
+  LinkedList,
+};

@@ -1,0 +1,16 @@
+{
+  "name": "linked-list-zip",
+  "version": "1.0.0",
+  "description": "Extend the linked list class with a method that that takes in two linked lists and “zips” the two lists together into one, so that the nodes alternate between the two lists. Also return a reference to the zipped list.",
+  "main": "linked-list-zip.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.2",
+    "supertest": "^6.2.4"
+  }
+}
