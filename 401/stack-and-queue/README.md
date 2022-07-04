@@ -6,6 +6,11 @@ Using a Linked List as the underlying data storage mechanism, implement both a *
 
 > ## Approach & Efficiency
 
+After learning linked lists, the approaches for both stack and queue methods seemed rather straightforward: Traverse once (at most) -- centered around the top for stacks or the front and/or back for queues -- and once you find your "edge" or match, do the thing.
+
+- O(n) time
+- O(1) space
+
 > ## API
 
 > Node
