@@ -1,0 +1,16 @@
+{
+  "name": "trees",
+  "version": "1.0.0",
+  "description": "> # Trees",
+  "main": "trees.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.2",
+    "supertest": "^6.2.4"
+  }
+}
