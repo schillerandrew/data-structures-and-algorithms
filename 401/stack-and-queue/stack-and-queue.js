@@ -28,7 +28,7 @@ class Stack {
   }
 
   pop () {
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       return 'The stack is empty -- nothing to remove!'
     } else {
       let topValue = this.top.value;
@@ -38,7 +38,7 @@ class Stack {
   }
 
   peek () {
-    if (this.isEmpty) {
+    if (this.isEmpty()) {
       return 'The stack is empty -- no value to return!';
     } else {
       return this.top.value;
@@ -73,7 +73,7 @@ class Queue {
   }
 
   dequeue () {
-    if (!this.front) {
+    if (this.isEmpty()) {
       return 'The queue is empty -- nothing to remove!';
     } else {
       let frontValue = this.front.value;
@@ -83,7 +83,7 @@ class Queue {
   }
 
   peek () {
-    if (this.isEmpty) {
+    if (this.isEmpty()) {
       return 'The queue is empty -- no value to return!'
     } else {
       return this.front.value;
@@ -98,3 +98,8 @@ class Queue {
     }
   }
 }
+
+module.exports = {
+  Stack,
+  Queue
+};
