@@ -1,0 +1,16 @@
+{
+  "name": "stack-and-queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
