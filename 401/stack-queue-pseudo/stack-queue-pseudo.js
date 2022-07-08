@@ -33,38 +33,49 @@ class Stack {
     }
   }
 
-  peek() {
-    if (this.isEmpty()) {
-      return 'The stack is empty -- no value to return!';
+  isEmpty() {
+    if (!this.top) {
+      return true;
     } else {
-      return this.top.value;
+      return false;
     }
   }
 }
 
 class PseudoQueue {
   constructor() {
-    this.top = null;
+    this.inputStack = new Stack();
+    this.outputStack = new Stack();
   }
 
-  enqueue (value) {
-    const node = new Node(value);
-    if (!this.top) {
-      this.top = node;
-      return;
-    } else {
-      node.next = this.top
-      this.top = node;
+  enqueue(value) {
+    if (this.inputStack.isEmpty() && this.outputStack.isEmpty()) {
+      this.inputStack.push(value);
+    } else if (this.outputStack.isEmpty()) {
+      this.inputStack.push(value);
+    } else if (this.inputStack.isEmpty() && !this.outputStack.isEmpty()) {
+      while (!this.outputStack.isEmpty()) {
+        this.inputStack.push(this.outputStack.pop());
+      }
+      this.inputStack.push(value);
     }
   }
 
-  dequeue () {
-    if (!this.top) {
-      return 'The pseudo queue is empty -- nothing to remove!';
-    } else {
-      let topValue = this.top.value;
-      this.top = this.top.next;
-      return topValue;
+  dequeue() {
+    if (this.outputStack.isEmpty()) {
+      while (!this.inputStack.isEmpty()) {
+        this.outputStack.push(this.inputStack.pop());
+      }
+    }
+    if (this.inputStack.isEmpty() && this.outputStack.isEmpty()) {
+      return 'There is nothing to dequeue.';
+    }
+    if (!this.outputStack.isEmpty()) {
+      return this.outputStack.pop();
     }
   }
+}
+
+module.exports = {
+  PseudoQueue
 }
