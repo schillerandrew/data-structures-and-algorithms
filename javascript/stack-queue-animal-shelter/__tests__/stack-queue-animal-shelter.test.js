@@ -2,7 +2,7 @@
 
 let { AnimalShelter } = require ('../stack-queue-animal-shelter');
 
-describe('AnimalShelter testing (\'cat\' or \'dog\'', () => {
+describe('AnimalShelter testing (\'cat\' or \'dog\')', () => {
   let shelter = new AnimalShelter();
 
   test('Error out when attempting to dequeue an empty queue', () => {
