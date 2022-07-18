@@ -20,7 +20,7 @@ class BinaryTree {
     queue.enqueue(current);
     while (!queue.isEmpty()) {
       current = queue.dequeue();
-      array.push(current);
+      array.push(current.value);
       if (current.left) {
         queue.enqueue(current.left);
       }
@@ -82,3 +82,16 @@ module.exports = {
   TreeNode,
   BinaryTree
 };
+
+// let tree = new BinaryTree();
+// let root = new TreeNode(1);
+
+// tree.root = root;
+// tree.root.left = new TreeNode(2);
+// root.left.left  = new TreeNode(4);
+// root.left.right  = new TreeNode(5);
+// root.right = new TreeNode(3);
+// root.right.left  = new TreeNode(6);
+// root.right.right  = new TreeNode(7);
+
+// console.log(tree.breadthFirst(tree));
