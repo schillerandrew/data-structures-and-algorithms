@@ -18,7 +18,7 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 
 > ## Approach & Efficiency
 
-I'm still not certain what traversal is best, but I'm guessing pre-order simply because that starts with the root. But I'm unclear on how to form the new (return-value) tree while I'm traversing the input tree, so that may change up which traversal I use, and also possibly the use of a stack or queue along with it. Big O time and space will likely be O(n), unless I decide to use a breadth-first traversal.
+I'm guessing that any depth-first recursive traversal would have worked, but pre-order still seemed safest. I struggled for a while with the need to bring in a tree as an argument, but even after believing I was finished I realized that I was altering the input tree in order to create the new tree. I figured out how to make a deep copy, so that a truly new tree was being returned. Big O time and space were O(n), pretty standard for a depth-first traversal.
 
 > ## Solution
 
