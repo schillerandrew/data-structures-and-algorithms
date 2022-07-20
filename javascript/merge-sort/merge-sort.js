@@ -7,9 +7,9 @@ function mergeSort(array) {
     let mid = Math.floor(n / 2); // halfway through array
     // console.log(mid);
     let left = array.slice(0, mid); // left side
-    console.log('LEFT', left);
     let right = array.slice(mid, array.length); // right side
-    console.log('RIGHT', right);
+    // let right = array.slice(mid); // right side
+    console.log('LEFT=', left, 'RIGHT=', right);
     mergeSort(left);
     mergeSort(right);
     merge(left, right, arr);
