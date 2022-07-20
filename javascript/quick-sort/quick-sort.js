@@ -32,8 +32,8 @@ const swap = (arr, i, low) => {
 }
 
 let array1 = [8,4,23,42,16,15];
-let array2 = [2,3,5,7,13,11];
-let array3 = [10, -1, 5, 0];
+// let array2 = [2,3,5,7,13,11];
+// let array3 = [10, -1, 5, 0];
 
 quickSort(array1, 0, 5);
 console.log('FINAL', array1);
